@@ -15,7 +15,7 @@ class CrazyButton extends React.Component {
   handleClick = () => {
     var counter = this.state.counter + 1;
     this.setState({counter:counter});
-    ons.notification.alert('Hello world!');
+    ons.notification.toast('Hello world!', {timeout:1000});
   };
 
   render() {
